@@ -1,5 +1,124 @@
+// Import Inter UI font
+@import url('https://rsms.me/inter/inter-ui.css');
+
 // global styles for <a> and <p> tags
 $govuk-global-styles: true;
+$govuk-font-family: 'Inter UI', sans-serif;
+$govuk-typography-scale: (
+  80: (
+    null: (
+      font-size: 53px,
+      line-height: 55px
+    ),
+    tablet: (
+      font-size: 80px,
+      line-height: 80px
+    ),
+    print: (
+      font-size: 53pt,
+      line-height: 1.1
+    )
+  ),
+  48: (
+    null: (
+      font-size: 32px,
+      line-height: 1.3
+    ),
+    tablet: (
+      font-size: 40px,
+      line-height: 1.3
+    ),
+    print: (
+      font-size: 32pt,
+      line-height: 1.15
+    )
+  ),
+  36: (
+    null: (
+      font-size: 24px,
+      line-height: 1.3
+    ),
+    tablet: (
+      font-size: 32px,
+      line-height: 1.3
+    ),
+    print: (
+      font-size: 24pt,
+      line-height: 1.05
+    )
+  ),
+  27: (
+    null: (
+      font-size: 18px,
+      line-height: 20px
+    ),
+    tablet: (
+      font-size: 27px,
+      line-height: 30px
+    ),
+    print: (
+      font-size: 18pt,
+      line-height: 1.15
+    )
+  ),
+  24: (
+    null: (
+      font-size: 18px,
+      line-height: 1.3
+    ),
+    tablet: (
+      font-size: 24px,
+      line-height: 1.3
+    ),
+    print: (
+      font-size: 18pt,
+      line-height: 1.15
+    )
+  ),
+  19: (
+    null: (
+      font-size: 15px,
+      line-height: 1.35
+    ),
+    tablet: (
+      font-size: 18px,
+      line-height: 1.45
+    ),
+    print: (
+      font-size: 14pt,
+      line-height: 1.15
+    )
+  ),
+  16: (
+    null: (
+      font-size: 14px,
+      line-height: 16px
+    ),
+    tablet: (
+      font-size: 16px,
+      line-height: 20px
+    ),
+    print: (
+      font-size: 14pt,
+      line-height: 1.2
+    )
+  ),
+  14: (
+    null: (
+      font-size: 12px,
+      line-height: 15px
+    ),
+    tablet: (
+      font-size: 14px,
+      line-height: 20px
+    ),
+    print: (
+      font-size: 12pt,
+      line-height: 1.2
+    )
+  )
+);
+
 
 // Import GOV.UK Frontend
 @import "node_modules/govuk-frontend/all";
@@ -14,3 +133,24 @@ $govuk-global-styles: true;
 @import "components/cookie-banner";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+// HOME OFFICE STYLES
+
+// Import header and footer
+@import "patterns/ho-header";
+@import "patterns/ho-footer";
+
+// Colour pallette
+$purple: #8F23B3;
+$background-grey: #f3f3f3;
+$dark-grey: #3B3B3B;
+
+// Other styling
+.ho-body {
+  background-color: $background-grey;
+  font-size: 18px;
+}
+
+footer {
+  box-shadow: 0 50vh 0 50vh #FFF;
+}
